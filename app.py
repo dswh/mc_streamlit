@@ -27,7 +27,7 @@ with col2:
 ticker_data = yf.Ticker(symbol)
 ticker_df = ticker_data.history(period="1d", start= start_date, end=end_date)
 
-st.write("""
+st.write(f"""
     ### {symbol}'s Stock price data """)
 
 st.dataframe(ticker_df)
